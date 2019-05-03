@@ -34,13 +34,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+- Adaptive websites have separate pre-selected resolution site designs stored at the server level. When a resolution is seen from the client the server then sends them the design for that resolution and only that resolution. Fully responsive sites serve all data for all resolutions to the client but only display the site in the format for the given resolution of the client browser.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+- When designing the site it is initially designed for the mobile platforms. From there typically media queries are designed to change the existing mobile page for the higher resolution displays for the expanded real-estate.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+- This changes the size of the default font size on the base html layer of the site. Since rem units reference this base size it allows us to have a baseline to build font-sizes off of for the rest of the site.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+- I would describe preprocessing as another layer on top of CSS in order to give the builder a more intuitive and functional way to write CSS. Simply put, it's a more readable method that also reduces the amount of code needed. This also helps down the road in making the CSS code much more understandable for a new developer.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+- My favorite concepts are variables, mixins (basically variables), and nesting. I think parametric mixins give me the most trouble because it's a lot of cross-referencing. However, they don't give me much trouble. I just have to reference the mixin.less file to make sure my calls are correct.
+
+6. Career Paragraph
+
+- My number one priority in a company I will work for is the belief in the product they are building. I'm learning programming so I can contribute to society by building something that will change humanity in a positive way. I also plan on contributing to open-source projects while working. I would prefer small or mid size companies due to the culture involved in them and the ability to have lots of flexibility on daily responsibilities. I've also worked for corporations before and the politics and hierachical structures can cause a lot of frustration and lack of communication from top to bottom.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -50,9 +64,9 @@ Follow these steps to set up your project:
 
 ### Git Set up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a forked copy of this project.
+- [x] Add your project manager as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
