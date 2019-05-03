@@ -1,3 +1,35 @@
+@keyframes pulse {
+  0% {
+    background: #F6F6F6;
+  }
+  50% {
+    background: black;
+    color: white;
+  }
+  100% {
+    background: #F6F6F6;
+  }
+}
+@keyframes bottom-pulse {
+  0% {
+    color: white;
+    background: #22283a;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  50% {
+    color: #22283a;
+    background: #5E6164;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  100% {
+    color: white;
+    background: #22283a;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -182,6 +214,11 @@ p {
   align-items: center;
   background: #F6F6F6;
   border-bottom: 1px solid #F1F1F1;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  opacity: 0.7;
 }
 .navigation h1 {
   font-size: 4rem;
@@ -202,8 +239,9 @@ p {
   border-radius: 5px;
 }
 .navigation nav a:hover {
-  background: black;
-  color: white;
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 @media (max-width: 500px) {
   .navigation h1 {
@@ -305,10 +343,9 @@ footer {
   height: 30px;
 }
 .home .walk .walk-text .btn:hover {
-  color: black;
-  background: gold;
-  border-radius: 10px;
-  cursor: pointer;
+  animation-name: bottom-pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 .home .walk .walk-img {
   width: 46%;
