@@ -1,10 +1,12 @@
 // Navigation code here
 .navigation {
     padding: 15px 0 0 0;
+    margin: 0 auto;
     width: 100%;
     max-width: 1000px;
     .flex(column, center, center);
-    background: lightgrey;
+    background: @nav-bg;
+    border-bottom: 1px solid @nav-border;
     h1 {
         font-size: 4rem;
         text-align: center;
@@ -12,9 +14,10 @@
     nav {
         // margin-top: 5px;
         .flex (row, center, center);
+        width: 100%;
         a {
             text-decoration: none;
-            color: black;
+            color: @nav-font;
             font-size:1.2rem;
             padding: 10px 2.5%;
             border-radius: 5px;
@@ -24,4 +27,5 @@
             }
         }
     }
+    
 }
